@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Work+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @font-face {
   font-family: 'Product Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-}
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-color: #2d4d36;
+  height: 390px; }
 
-body {
-  background-color: #f4eeff;
-}
+.col-12 {
+  display: flex;
+  justify-content: center; }
 
 img {
   border-radius: 30px;
+<<<<<<< HEAD
   background: #BADA55;
 }
 #btn {
@@ -43,57 +47,364 @@ img {
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(211, 161, 153, 0.3);
 }
+=======
+  background: #BADA55; }
+
+>>>>>>> master
 /*#fff3e5f*/
 .header {
   background-color: transparent;
   box-shadow: none;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
 h2, h1 {
   color: #649d66;
-  font-family: 'Product Sans', sans-serif;
-}
+  font-family: 'Roboto Mono', sans-serif; }
+
+h3 {
+  color: white;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 20px; }
+
+h4 {
+  color: white;
+  font-size: 16px; }
+
 /*font-family: 'Amiri', serif;
 font-family: 'Work Sans', sans-serif;*/
 p, a {
   color: rgba(0, 0, 0, 0.7);
-   font-family: 'Roboto Mono', sans-serif;
-}
-i {
+  font-family: 'Roboto Mono', sans-serif; }
 
+a:hover {
+  text-decoration: none;
+  color: #6f214c; }
+
+i {
   font-size: 20px;
-  color: #543864;
-}
+  color: #543864; }
 
 i:hover {
-opacity: .5;
-}
+  opacity: .5; }
 
 .list-inline {
-  padding: 0;
-}
+  padding: 0; }
 
 .list-inline li {
-  display: inline-block;
-}
+  display: inline-block; }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-/*f1d1d1*/
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em; }
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em; }
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out; }
+
+.social-icons a {
+  display: inline-block; }
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(90deg, #42275a 0%, #734b6d 100%);
+  transition: all 265ms ease-out; }
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in; }
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #020024;
+  background: -webkit-linear-gradient(90deg, #020024 0%, #734b6d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in; }
+
+#btn {
+  transition: ease all 1s;
+  background-color: #543864;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 50px 5px 50px 5px;
+  text-decoration: none;
+  width: 100;
+  font-size: 8px; }
+
+#btn:hover {
+  color: #649d66;
+  opacity: .5;
+  border-radius: 5px 50px 5px 50px; }
+
+.outer-div,
+.inner-div {
+  height: 450px;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center; }
+
+.outer-div {
+  perspective: 900px;
+  perspective-origin: 50% calc(50% - 18em); }
+
+.front,
+.back {
+  position: relative;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden; }
+
+.front {
+  cursor: pointer;
+  height: 100%;
+  background: #fff;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.front__bkg-photo {
+  position: relative;
+  height: 150px;
+  width: 300px;
+  background: transparent;
+  background-size: cover;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+
+.front__face-photo {
+  position: relative;
+  top: -60px;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background: url("images/Odetaa.jpg") no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+  z-index: 3; }
+
+.front__text {
+  position: relative;
+  top: -55px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 18px;
+  backface-visibility: hidden; }
+  .front__text .front__text-header {
+    font-weight: 700; }
+  .front__text .front__text-para {
+    position: relative;
+    top: -5px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif; }
+  .front__text .front-icons {
+    position: relative;
+    top: 0;
+    font-size: 14px;
+    margin-right: 6px;
+    color: gray; }
+  .front__text .front__text-hover {
+    position: relative;
+    top: 10px;
+    font-size: 10px;
+    color: #ff434c;
+    backface-visibility: hidden;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #ff434c;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: #ff434c;
+    color: #fff;
+    box-shadow: 0 11px 20px -12px rgba(0, 0, 0, 0.6); }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+  grid-gap: 16px;
+  margin-left: 80px; }
+
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  height: 100vh;
+  background-color: #ece0e8; }
+
+.card {
+  flex: initial;
+  position: relative;
+  height: 34rem;
+  width: 33rem;
+  -moz-perspective: 200rem;
+  perspective: 200rem;
+  margin: 2rem; }
+  .card__side {
+    height: 34rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    /* We don't want to see the back part of the element. */
+    backface-visibility: hidden;
+    /* We don't want to see the back part of the element. */
+    border-radius: 3px;
+    overflow: hidden;
+    /* The image is overflowing the parent. */
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg); }
+    .card__side--back {
+      background-color: #fff; }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card__theme {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 54%;
+    width: 90%;
+    text-align: center; }
+  .card__theme-box {
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__subject {
+    font-family: "Inconsolata", monospace;
+    letter-spacing: 0.8rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  .card__title {
+    font-family: "VT323", monospace;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 100;
+    color: white; }
+  .card__cover {
+    position: relative;
+    background-size: cover;
+    height: 14rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg); }
+  .card__heading {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%; }
+  .card__heading-span {
+    font-family: "VT323", monospace;
+    font-size: 4.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    color: #fff; }
+  .card__project {
+    padding: 4rem 2rem; }
+    .card__project a {
+      color: #543864;
+      font-size: 12px; }
+  .card__details {
+    font-family: "Inconsolata", monospace; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  .card .btn-outline-primary {
+    border-color: #543864; }
+  .card .btn-outline-primary:hover {
+    background-color: #6f214c; }
+  @media only screen and (max-width: 37.5em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--front {
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+        .card__side--back {
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 3rem 2rem; }
+      .card__theme {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 5rem 4rem 1.5rem 4rem;
+        text-align: right; }
+      .card__theme-box {
+        margin-bottom: 1.5rem; }
+      .card__title {
+        font-size: 4rem; } }
+
+/*# sourceMappingURL=style.css.map */
