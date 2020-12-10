@@ -420,9 +420,9 @@ padding-left: 0px;}
  
 
 
-@media only screen and (min-width: 290px) and (max-width: 812px){
+/* @media only screen and (min-width: 290px) and (max-width: 812px){ */
 .row {
   margin-left: 0px !important;
   margin-right: 0px !important;}
-}
+
 /*# sourceMappingURL=style.css.map */
