@@ -8,7 +8,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  background-color: #2d4d36;
+  /* background-color: #004AAD */
   height: 390px; }
 
 .col-12 {
@@ -32,11 +32,11 @@ h2, h1 {
 h3 {
   color: white;
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 20px; }
+  font-size: 22px; }
 
 h4 {
   color: white;
-  font-size: 16px; }
+  font-size: 18px; }
 
 /*font-family: 'Amiri', serif;
 font-family: 'Work Sans', sans-serif;*/
@@ -108,7 +108,7 @@ i:hover {
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in; }
 
-#btn {
+/* #btn {
   transition: ease all 1s;
   background-color: #543864;
   padding: 10px 30px;
@@ -121,7 +121,7 @@ i:hover {
 #btn:hover {
   color: #649d66;
   opacity: .5;
-  border-radius: 5px 50px 5px 50px; }
+  border-radius: 5px 50px 5px 50px; } */
 
 .outer-div,
 .inner-div {
@@ -178,7 +178,7 @@ i:hover {
 
 .front__text {
   position: relative;
-  top: -55px;
+  top: -30px;
   margin: 0 auto;
   font-family: "Montserrat";
   font-size: 18px;
@@ -253,127 +253,176 @@ body {
   width: 33rem;
   -moz-perspective: 200rem;
   perspective: 200rem;
-  margin: 2rem; }
-  .card__side {
-    height: 34rem;
-    transition: all 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    /* We don't want to see the back part of the element. */
-    backface-visibility: hidden;
-    /* We don't want to see the back part of the element. */
-    border-radius: 3px;
-    overflow: hidden;
-    /* The image is overflowing the parent. */
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15); }
-    .card__side--front {
-      background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg); }
-    .card__side--back {
-      background-color: #fff; }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card__theme {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 54%;
-    width: 90%;
-    text-align: center; }
-  .card__theme-box {
-    color: #fff;
-    margin-bottom: 8rem; }
-  .card__subject {
-    font-family: "Inconsolata", monospace;
-    letter-spacing: 0.8rem;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem; }
-  .card__title {
-    font-family: "VT323", monospace;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 100;
-    color: white; }
-  .card__cover {
-    position: relative;
-    background-size: cover;
-    height: 14rem;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg); }
-  .card__heading {
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%; }
-  .card__heading-span {
-    font-family: "VT323", monospace;
-    font-size: 4.2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 1rem 1.5rem;
-    color: #fff; }
-  .card__project {
-    padding: 4rem 2rem; }
-    .card__project a {
-      color: #543864;
-      font-size: 12px; }
-  .card__details {
-    font-family: "Inconsolata", monospace; }
-    .card__details ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto; }
-      .card__details ul li {
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 1rem; }
-        .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #eee; }
-  .card .btn-outline-primary {
-    border-color: #543864; }
-  .card .btn-outline-primary:hover {
-    background-color: #6f214c; }
-  @media only screen and (max-width: 37.5em), only screen and (hover: none) {
-    .card {
-      height: auto;
-      border-radius: 3px;
-      background-color: #fff;
-      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15); }
-      .card__side {
-        height: auto;
-        position: relative;
-        box-shadow: none; }
-        .card__side--front {
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-        .card__side--back {
-          transform: rotateY(0); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__details {
-        padding: 3rem 2rem; }
-      .card__theme {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0);
-        width: 100%;
-        padding: 5rem 4rem 1.5rem 4rem;
-        text-align: right; }
-      .card__theme-box {
-        margin-bottom: 1.5rem; }
-      .card__title {
-        font-size: 4rem; } }
+  margin: 2rem; 
+}
+.card__side {
+  height: 38rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  border-radius: 3px;
+  overflow: hidden;
+  /* The image is overflowing the parent. */
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15); }
+.card__side--back {
+  background-color: #fff; }
+.card:hover .card__side--back {
+  transform: rotateY(0); }
+.card:hover .card__side--front {
+  transform: rotateY(-180deg); }
+.card__theme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 54%;
+  width: 90%;
+  text-align: center; }
+.card__theme-box {
+  color: #fff;
+  margin-bottom: 8rem; }
+.card__subject {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 0.8rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+.card__title {
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 100;
+  color: white; }
+.card__cover {
+  position: relative;
+  background-size: cover;
+  height: 14rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg); }
+.card__heading {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%; }
+.card__heading-span {
+  font-family: "VT323", monospace;
+  font-size: 4.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  color: #fff; }
+.card__project {
+  padding: 1rem 2rem; }
+.card__project a {
+  color: #543864;
+  font-size: 12px; }
+.card__details {
+  font-family: "Inconsolata", monospace; }
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto; }
+.card__details ul li {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem; }
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee; }
+.card .btn-outline-primary {
+  border-color: #543864; }
+.card .btn-outline-primary:hover {
+  background-color: #6f214c; }
 
+    /* Social Icons */
+.center {
+  display: table;
+  width: 100%;
+  height: 160px;
+}
+    
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;}
+#social-test h2 {
+  color: #fff;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: 100;}
+.social {
+padding-left: 0px;}
+.social li {
+  color: rgba(167, 146, 129, 0.6);
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid rgba(167, 146, 129, 0.4);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease .3s;}
+.social li:hover {
+  color: rgba(167, 146, 129, 1);
+  border: 1px solid rgba(167, 146, 129, 1);}
+.social:hover > li {
+  opacity: 0.5;}
+    
+.social:hover > li:hover {
+  opacity: 1;}
+.row {
+  margin-left: 70px !important;
+  margin-right: 0px !important;} 
+
+@media only screen and (max-width: 37.5em), only screen and (hover: none) {
+.card {
+  height: auto;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15); }
+.card__side {
+  height: auto;
+  position: relative;
+  box-shadow: none; }
+.card__side--front {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+.card__side--back {
+  transform: rotateY(0); }
+.card:hover .card__side--front {
+  transform: rotateY(0); }
+.card__details {
+  padding: 3rem 2rem; }
+.card__theme {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(0);
+  width: 100%;
+  padding: 5rem 4rem 1.5rem 4rem;
+  text-align: right; }
+.card__theme-box {
+  margin-bottom: 1.5rem; }
+.card__title {
+ font-size: 4rem; }}
+ 
+
+
+@media only screen and (min-width: 290px) and (max-width: 812px){
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;}
+}
 /*# sourceMappingURL=style.css.map */
