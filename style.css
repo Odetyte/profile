@@ -244,7 +244,7 @@ html {
 
 body {
   height: 100vh;
-  background-color: #ece0e8; }
+  background-color: #ad98a6; }
 
 .card {
   flex: initial;
@@ -327,16 +327,17 @@ body {
   padding: 1rem 2rem; }
 .card__project a {
   color: #543864;
+  text-decoration: underline;
   font-size: 12px; }
 .card__details {
-  font-family: "Inconsolata", monospace; }
+  font-family: "Inconsolata", monospace;}
 .card__details ul {
   list-style: none;
   width: 80%;
   margin: 0 auto; }
 .card__details ul li {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 12px;
   padding: 1rem; }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee; }
