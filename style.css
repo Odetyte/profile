@@ -40,13 +40,19 @@ h4 {
 
 /*font-family: 'Amiri', serif;
 font-family: 'Work Sans', sans-serif;*/
-p, a {
-  color: rgba(0, 0, 0, 0.7);
-  font-family: 'Roboto Mono', sans-serif; }
+a {
+  color:#26133c;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: box-shadow 0.1s ease-in-out;
+  box-shadow: inset 0 -10px 0 0 #f5d6e7;
+}
 
 a:hover {
-  text-decoration: none;
-  color: #6f214c; }
+  box-shadow: inset 0 -40px 0 0 #734b6d;
+  color:  white;
+}
 
 i {
   font-size: 20px;
@@ -60,68 +66,6 @@ i:hover {
 
 .list-inline li {
   display: inline-block; }
-
-.social-icons {
-  padding: 0;
-  list-style: none;
-  margin: 1em; }
-
-.social-icons li {
-  display: inline-block;
-  margin: 0.15em;
-  position: relative;
-  font-size: 1em; }
-
-.social-icons i {
-  color: #fff;
-  position: absolute;
-  top: 0.95em;
-  left: 0.96em;
-  transition: all 265ms ease-out; }
-
-.social-icons a {
-  display: inline-block; }
-
-.social-icons a:before {
-  transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  content: " ";
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  display: block;
-  background: linear-gradient(90deg, #42275a 0%, #734b6d 100%);
-  transition: all 265ms ease-out; }
-
-.social-icons a:hover:before {
-  transform: scale(0);
-  transition: all 265ms ease-in; }
-
-.social-icons a:hover i {
-  transform: scale(2.2);
-  -ms-transform: scale(2.2);
-  -webkit-transform: scale(2.2);
-  color: #020024;
-  background: -webkit-linear-gradient(90deg, #020024 0%, #734b6d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 265ms ease-in; }
-
-/* #btn {
-  transition: ease all 1s;
-  background-color: #543864;
-  padding: 10px 30px;
-  color: white;
-  border-radius: 50px 5px 50px 5px;
-  text-decoration: none;
-  width: 100;
-  font-size: 8px; }
-
-#btn:hover {
-  color: #649d66;
-  opacity: .5;
-  border-radius: 5px 50px 5px 50px; } */
 
 .outer-div,
 .inner-div {
@@ -381,7 +325,9 @@ padding-left: 0px;}
   border: 1px solid rgba(167, 146, 129, 1);}
 .social:hover > li {
   opacity: 0.5;}
-    
+.social a:hover{
+  box-shadow: none;
+}
 .social:hover > li:hover {
   opacity: 1;}
 .row {
