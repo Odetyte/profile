@@ -219,6 +219,11 @@ button a {
   text-decoration: none;
 }
 
+span {
+  font-weight: 300;
+  font-size: 12px;
+}
+
 /* footer */
 .footer {
   text-align: center;
