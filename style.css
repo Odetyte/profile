@@ -263,6 +263,24 @@ ul {
   list-style-type: none;
 }
 
+.cocktail-img,
+.wearher-img {
+  object-fit: contain;
+}
+
+.cocktail-img {
+  height: 290px;
+}
+
+.weather-img {
+  height: 222px;
+}
+
+.wedding-img {
+  height: 183px;
+  object-fit: cover;
+}
+
 /* media query */
 @media(min-width: 1000px) {
   h1:before {
