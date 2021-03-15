@@ -49,12 +49,13 @@ h3 {
 
 h4 {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .more-text {
-  width: 107%;
-  margin-left: -0.5em;
+  margin-bottom: 1em;
+  width: 113%;
+  margin-left: -1em;
 }
 
 button {
@@ -227,6 +228,10 @@ button a {
 /* footer */
 .footer {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .card-img-top {
@@ -244,11 +249,14 @@ img {
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: end;
   font-size: 30px;
   width: 50%;
-  margin-left: 2.5em;
-  margin-top: 0.25em;
+  margin: 0 auto;
+}
+
+.social li {
+  margin-right: 1em;
 }
 
 .social a {
@@ -281,6 +289,19 @@ ul {
   object-fit: cover;
 }
 
+/* bio */
+.yellow {
+  border-bottom: solid 2px #f7df1d;
+}
+
+.red {
+  border-bottom: solid 2px #c60000;
+}
+
+.blue {
+  border-bottom: solid 2px #61dafb;
+}
+
 /* media query */
 @media(min-width: 1000px) {
   h1:before {
@@ -300,7 +321,16 @@ ul {
   }
 
   .social {
-    justify-content: center;
-    width: 91%;
+    justify-content: flex-end;
+    width: 0%;
+  }
+
+  .more-text {
+    width: 161%;
+    margin-left: -5em;
+  }
+
+  h4 {
+    font-size: 18px;
   }
 }
